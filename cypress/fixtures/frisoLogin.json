@@ -1,0 +1,5 @@
+{
+    "username": "admin",
+    "password": "123456",
+    "login_page": "https://test-admin-friso.fractal.vn/login"
+}

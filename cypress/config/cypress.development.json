@@ -1,0 +1,7 @@
+{
+    "baseUrl": "",
+    "env": {
+        "api": "https://api.dev.example.com"
+    },
+    "CYPRESS_RECORD_KEY": "76b3a14f-7295-4c3b-8560-b0d18871f203"
+}

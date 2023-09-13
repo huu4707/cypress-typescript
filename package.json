@@ -1,0 +1,31 @@
+{
+  "name": "cypress-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:build": "tsc -p cypress",
+    "dev": "cypress:open",
+    "staging": "cypress open --env mode=staging",
+    "prod": "cypress open --env mode=prod",
+    "record:dev": "dotenv -- cross-var npx cypress run --record --key %CYPRESS_RECORD_KEY%",
+    "record:staging": "dotenv -- cross-var npx cypress run --record --key %CYPRESS_RECORD_KEY% --env mode=staging",
+    "record:prod": "dotenv -- cross-var npx cypress run --record --key %CYPRESS_RECORD_KEY% --env mode=prod"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "cross-var": "^1.1.0",
+    "cypress": "^13.1.0",
+    "dotenv-cli": "^7.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
